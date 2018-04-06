@@ -1,0 +1,50 @@
+body {
+	margin: 0;
+}
+
+#webviewdummy {
+	display: none;
+}
+
+/*.webviewdummy,
+#close {
+	position: absolute;
+	z-index: 1;
+}*/
+
+/*#webviewdummy {
+	-webkit-app-region: drag;
+	background-color: rgba(0,132,255,1);
+	top: 0;
+	left: 0;
+	right: 15px;
+	height: 10px;
+}*/
+
+/*#webviewdummy1 {
+	-webkit-app-region: drag;
+	background-color: rgba(0,132,255,1);
+	top: 0;
+	left: 0;
+	height: 50px;
+	width: 10px;
+}
+
+#webviewdummy2 {
+	-webkit-app-region: drag;
+	background-color: rgba(0,132,255,1);
+	top: 0;
+	left: 0;
+	right: 15px;
+	height: 10px;
+}
+
+#close {
+	top: 0;
+	right: 0;
+	width: 15px;
+	height: 15px;
+	cursor: pointer;
+	z-index: 2;
+}
+*/

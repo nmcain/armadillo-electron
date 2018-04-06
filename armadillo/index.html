@@ -1,0 +1,1584 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Armadillo - Started</title>
+  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="mdl/4.css">
+<script src="mdl/material.min.js"></script>
+<script src="main.js"></script>
+     
+	<link rel="stylesheet" href="../fonts/stylesheet.css" type="text/css" charset="utf-8" />
+
+	<style type="text/css">
+					body{
+				font-family: 'robotolight';
+							}
+		</style>
+    
+    
+    
+</head>
+<body><div align="center">
+  
+  
+  
+  
+  
+  <a name="1">
+ <div class="slide1">
+   <style>
+   
+     body {
+  margin:0;
+  background-color:#222;
+  overflow:hidden;
+  
+  
+}
+.slide1{
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("assets/def.jpg") no-repeat  ;
+  background-size:100% 100%;
+  height:480px;
+  width:800px;
+}
+.clock{
+  font-size:75px;
+  color:white;
+ font-family: 'robotolight';
+}
+.lginbtn{
+  height:40px;
+  width:100px;
+  border-radius:20px;
+  border:1px solid #fff;
+  margin-top:180px;
+  margin-right:10px;
+  float:right;
+}
+.lginbtn:active{
+  height:40px;
+  width:100px;
+  border-radius:20px;
+  border:1px solid #fff;
+  margin-top:180px;
+  margin-right:10px;
+  background: rgba(255,255,255,0.2);
+  float:right;
+}
+.lginbtn2{
+  height:40px;
+  width:100px;
+  border-radius:20px;
+  border:1px solid #fff;
+  margin-top:180px;
+  
+  float:right;
+  margin-right:10px;
+}
+.lginbtn2:active{
+  height:40px;
+  width:100px;
+  border-radius:20px;
+  border:1px solid #fff;
+  margin-top:180px;
+  
+  background: rgba(255,255,255,0.2);
+  float:right;
+}
+.lgin{
+  color:white;
+  font-size:15px;
+  font-family: 'robotoregular';
+  margin-top:10px;
+  margin-right:27px;
+}
+.lgin2{
+  color:white;
+  font-size:15px;
+  font-family: 'robotoregular';
+  margin-top:10px;
+  margin-right:35px;
+}
+       
+   </style>
+  <div class="cork"><style>.cork{
+  height:225px;
+  width:100px}</style></div>
+  
+   <div class="clock">9:56</div>
+   
+   <div align="right">
+ <a href="#3"><div class="lginbtn"><div class="lgin">LOGIN</div></div></a>
+ <a href="#2"><div class="lginbtn2"><div class="lgin2">WIFI</div></div></a>
+       <a href="../index.html"><div class="lginbtn2"><div class="lgin2">EXIT</div></div></a>
+ </div>
+ </div>
+ </a>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <a name="2">
+ <div class="slide2">
+   <style>
+.slide2{
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("assets/def.jpg") no-repeat  ;
+  background-size:100% 100%;
+  height:480px;
+  width:800px;
+  margin-top:50px;
+}
+   </style>
+   <div style="height:40px;
+      width:800px;
+      "></div>
+<div class="wifibox">
+  <style>
+    .wifibox{
+      height:400px;
+      width:700px;
+      background:#eee;
+      border-radius:5px;
+    }
+    .networks{
+      background:#fff;
+      width:700px;
+      height:350px;
+      border-radius:5px 5px 0px 0px;
+    }
+    .nitem{
+      height:50px;
+      border-bottom:1px solid #e0e0e0;
+      width:700px;
+        font-family: 'robotoregular';
+    }
+     .nitem4{
+      height:50px;
+    font-family: 'robotoregular';
+      width:700px;
+    }
+    .nicon{
+      font-size:25px;
+      margin-top:13px;
+      margin-left:13px;
+      float:left;
+    }
+    .nname{
+      color:#222;
+      font-size:15px;
+      margin-left:50px;
+      float:left;
+      margin-top:15px;
+        font-family: 'robotoregular';
+    }
+  </style>
+  <div class="networks">
+    <div align="left">
+    <div class="nitem"><i class="nicon material-icons">signal_wifi_4_bar_lock</i><div class="nname">Network54</div></div>
+     <div class="nitem"><i class="nicon material-icons">signal_wifi_4_bar_lock</i><div class="nname">Charter_501</div></div>
+      <div class="nitem"><i class="nicon material-icons">signal_wifi_4_bar_lock</i><div class="nname">NotMyWifi</div></div>
+       <div class="nitem"><i class="nicon material-icons">signal_wifi_4_bar_lock</i><div class="nname">Bob's iPhone</div></div>
+        <div class="nitem"><i class="nicon material-icons">signal_wifi_4_bar</i><div class="nname">GoogleGuest</div></div>
+         <div class="nitem"><i class="nicon material-icons">signal_wifi_4_bar</i><div class="nname">belkin-guest</div></div>
+         <div class="nitem4"><i class="nicon material-icons">signal_wifi_4_bar</i><div class="nname">Hidden Network</div></div>
+  </div>
+  <style>
+      .bt012{
+        margin-top:px;
+        float:right;
+        margin-right:10px;
+        font-family: 'robotoregular';
+      }
+    </style>
+  <a href="#1" class="bt012 mdl-button mdl-js-ripple-effect mdl-js-button mdl-button--accent">OK<i class="material-icons">chevron_right</i></a>
+</div>
+ </div>
+ </div>
+ </a>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  <a name="3">
+ <div class="slide3">
+   <style>
+.slide3{
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("assets/bg4.jpg") no-repeat  ;
+  background-size:100% 100%;
+  height:480px;
+  width:800px;
+  margin-top:50px;
+}
+.searchbar{
+  border-radius:10px 10px 0px 0px;
+  height:75px;
+  width:800px;
+  background:#ffffff;
+  color:767676;
+  margin-top:100px;
+}
+.gicon{
+  margin-top:25px;
+  margin-left:25px;
+  float:left;
+}
+.srchtxt{
+    font-size:15px;
+  margin-top:28px;
+  color:#767676;
+  float:left;
+  font-family: 'robotoregular';
+   margin-left:50px;
+}
+.usercircle{
+  height:50px;
+  width:50px;
+  border-radius:100%;
+  background:url(assets/icon.jpeg);
+  border:2px solid #ffffff;
+float:left;
+  margin-left:53px;
+}
+.img01{
+  float:left;
+  margin-top:5px;
+  margin-left:70px;
+}
+.img02{
+  margin-top:-5px;
+  margin-left:5px;
+}
+.img03{
+  margin-top:-5px;
+  margin-left:5px;
+}
+.spacersr{
+  width:800px;
+  height:205px;
+}
+.connected{
+  color:#fff;
+  font-size:15px;
+  float:right;
+  margin-top:15px;
+  margin-right:25px;
+  margin-left:25px;
+    font-family: 'robotoregular';
+}
+.battery{
+  color:#fff;
+  font-size:15px;
+  float:right;
+  margin-right:150px;
+    margin-top:15px;
+    font-family: 'robotoregular';
+}
+.stories{
+  background:#DBE2E5;
+  height:100px;
+  width:800px;
+}
+.micon{
+  color:#eeeeee;
+  font-size:20px;
+}
+.sbutton{
+  margin-top:80px;
+}
+   </style>
+
+  <div class="spacersr">    <button class="sbutton mdl-button mdl-js-button mdl-button--icon">
+      <i class="micon material-icons">arrow_upward</i>
+    </button></div>
+ 
+<img class="img01" src="assets/img.png" width="250px" height="40px">
+<div align="center">
+<a href="#4"><div class="usercircle"></div></a>
+</div>
+<div class="battery">84%<img class="img03" src="assets/b80.png" width="20px" height="20px"></div>
+<div class="connected">GoogleGuest<img class="img02" src="assets/wlock3.png" width="20px" height="20px"></div>
+<a href="#apps"><div class="searchbar"><img class="gicon" src="assets/gicon.png" height="25" width="25"><div class="srchtxt">Ask for anything</div></div></a>
+<div class="stories"><a href="#8"><div class="calcs"><div class="stext">Calculator</div><div class="sicon"></div></div></a>
+
+<a href="#9"><div class="filess"><div class="stext">Downloads</div><div class="sicon20"></div></div></a>
+<style>
+  .calcs{
+    height:80px;
+    background:#ffffff;
+    width:300px;
+    float:left;
+    border-radius:5px;
+    margin-top:10px;
+    margin-right:5px;
+    margin-left:95px;
+  }
+  .filess{
+    height:80px;
+    background:#fff;
+    width:300px;
+    float:left;
+    border-radius:5px;
+    margin-top:10px;
+    margin-left:5px;
+  }
+  .calcs:active{
+    height:80px;
+    background:#eee;
+    width:300px;
+    float:left;
+    border-radius:5px;
+    margin-top:10px;
+    margin-right:5px;
+    margin-left:95px;
+  }
+  .filess:active{
+    height:80px;
+    background:#eee;
+    width:300px;
+    float:left;
+    border-radius:5px;
+    margin-top:10px;
+    margin-left:5px;
+  }
+  .stext{
+    font-size:15px;
+    color:#333;
+    float:left;
+    margin-top:30px;
+    margin-left:20px;
+    font-family: 'robotoregular';
+      
+  }
+  .sicon{
+     background:url("assets/calc.png") no-repeat  ;
+  background-size:100% 100%;
+  height:70px;
+  width:70px;
+  float:right;
+  margin-top:5px;
+  margin-right:5px;
+  }
+   .sicon20{
+     background:url("assets/down.png") no-repeat  ;
+  background-size:100% 100%;
+  height:70px;
+  width:70px;
+  float:right;
+  margin-top:5px;
+  margin-right:5px;
+  }
+</style></div>
+ </div>
+ </div>
+ </a>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <div align="center">
+
+ <a name="apps">
+ <div class="slideapps">
+   <style>
+.slideapps{
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("assets/bg4.jpg") no-repeat  ;
+  background-size:100% 100%;
+  height:480px;
+  width:800px;
+  margin-top:50px;
+}
+.searchbar2{
+  border-radius:10px 10px 0px 0px;
+  height:75px;
+  width:800px;
+  background:#ffffff;
+  color:767676;
+  margin-top:100px;
+}
+.gicon2{
+  margin-top:25px;
+  margin-left:25px;
+  float:left;
+}
+.srchtxt2{
+  font-size:15px;
+  margin-top:28px;
+  color:#767676;
+  float:left;
+  font-family: 'robotoregular';
+   margin-left:50px;
+}
+
+
+.micon2{
+  color:#eeeeee;
+  font-size:20px;
+}
+.sbutton2{
+  margin-top:80px;
+}
+   </style>
+<style>
+  .st2{
+  background:#DBE2E5;
+  height:430px;
+  width:800px;
+}
+</style>
+ 
+<a href="#3"><div class="searchbar2"><img class="gicon2" src="assets/gicon.png" height="25" width="25"><div class="srchtxt2">Ask for anything</div></div></a>
+<div class="st2"><a href="#8"><div class="calcs2"><div class="stext2">Calculator</div><div class="sicon2"></div></div></a>
+<a href="#9"><div class="filess2"><div class="stext2">Downloads</div><div class="sicon22"></div></div></a>
+<a href="#8"><div class="calcs2"><div class="stext2">Weather</div><div class="sicon21"></div></div></a>
+<a href="#5"><div class="filess2"><div class="stext2">Developer Options</div><div class="sicon223"></div></div></a>
+<a href="#10"><div class="calcs2"><div class="stext2">Settings</div><div class="sicon23"></div></div></a>
+<a href="#7"><div class="filess2"><div class="stext2">Mail</div><div class="sicon224"></div></div></a>
+<a href="#8"><div class="calcs2"><div class="stext2">Docs</div><div class="sicon24"></div></div></a>
+<a href="#7"><div class="filess2"><div class="stext2">Google News</div><div class="sicon225"></div></div></a>
+</div>
+<style>
+  .calcs2{
+    height:80px;
+    background:#ffffff;
+    width:300px;
+    float:left;
+    border-radius:5px;
+    margin-top:10px;
+    margin-right:5px;
+    margin-left:95px;
+  }
+  .filess2{
+    height:80px;
+    background:#fff;
+    width:300px;
+    float:left;
+    border-radius:5px;
+    margin-top:10px;
+    margin-left:5px;
+  }
+  .calcs2:active{
+    height:80px;
+    background:#eee;
+    width:300px;
+    float:left;
+    border-radius:5px;
+    margin-top:10px;
+    margin-right:5px;
+    margin-left:95px;
+  }
+  .filess2:active{
+    height:80px;
+    background:#eee;
+    width:300px;
+    float:left;
+    border-radius:5px;
+    margin-top:10px;
+    margin-left:5px;
+  }
+  .stext2{
+    font-size:15px;
+    color:#333;
+    float:left;
+    margin-top:30px;
+    margin-left:20px;
+    font-family: 'robotoregular';
+  }
+  .sicon2{
+     background:url("assets/calc.png") no-repeat  ;
+  background-size:100% 100%;
+  height:70px;
+  width:70px;
+  float:right;
+  margin-top:5px;
+  margin-right:5px;
+  }
+  .sicon21{
+     background:url("assets/sunnyclouds.png") no-repeat  ;
+  background-size:100% 100%;
+  height:70px;
+  width:70px;
+  float:right;
+  margin-top:5px;
+  margin-right:5px;
+  }
+   .sicon22{
+     background:url("assets/down.png") no-repeat  ;
+  background-size:100% 100%;
+  height:70px;
+  width:70px;
+  float:right;
+  margin-top:5px;
+  margin-right:5px;
+  }
+   .sicon23{
+     background:url("assets/set.png") no-repeat  ;
+  background-size:100% 100%;
+  height:70px;
+  width:70px;
+  float:right;
+  margin-top:5px;
+  margin-right:5px;
+  }
+   .sicon223{
+     background:url("assets/info.png") no-repeat  ;
+  background-size:100% 100%;
+  height:70px;
+  width:70px;
+  float:right;
+  margin-top:5px;
+  margin-right:5px;
+  }
+   .sicon24{
+     background:url("assets/docs.png") no-repeat  ;
+  background-size:100% 100%;
+  height:70px;
+  width:70px;
+  float:right;
+  margin-top:5px;
+  margin-right:5px;
+  }
+   .sicon224{
+     background:url("assets/mail.png") no-repeat  ;
+  background-size:100% 100%;
+  height:70px;
+  width:70px;
+  float:right;
+  margin-top:5px;
+  margin-right:5px;
+  }
+   
+   .sicon225{
+     background:url("assets/news.png") no-repeat  ;
+  background-size:100% 100%;
+  height:70px;
+  width:70px;
+  float:right;
+  margin-top:5px;
+  margin-right:5px;
+  }
+</style>
+
+
+
+</div>
+
+
+
+
+
+
+ </div>
+
+ </a>
+ </div>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <div align="center">
+ 
+  <a name="4">
+ <div class="slide4">
+   <style>
+.slide4{
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("assets/bg4.jpg") no-repeat  ;
+  background-size:100% 100%;
+  height:480px;
+  width:800px;
+  margin-top:50px;
+    font-family: 'robotoregular';
+}
+.searchbar2{
+  border-radius:10px 10px 0px 0px;
+  height:75px;
+  width:800px;
+  background:#ffffff;
+  color:767676;
+  margin-top:35px;
+    font-family: 'robotoregular';
+}
+.gicon2{
+  margin-top:25px;
+  margin-left:25px;
+  float:left;font-family: 'robotoregular';
+}
+.srchtxt2{
+  font-size:15px;
+  margin-top:28px;
+  color:#767676;
+  float:left;
+   font-family: 'robotoregular';
+   margin-left:50px;
+}
+.usercircle2{
+  height:50px;
+  width:50px;
+  border-radius:100%;
+  background:url(assets/icon.jpeg);
+  border:2px solid #ffffff;
+font-family: 'robotoregular';
+  box-shadow: 0px 0px 10px #000;
+}
+.img012{
+  float:left;
+  margin-top:5px;
+  margin-left:70px;font-family: 'robotoregular';
+}
+.img022{
+  margin-top:-5px;
+  margin-left:5px;font-family: 'robotoregular';
+}
+.img032{
+  margin-top:-5px;
+  margin-left:5px;font-family: 'robotoregular';
+}
+.spacersr2{
+  width:800px;
+  height:10px;font-family: 'robotoregular';
+}
+.connected2{
+  color:#222;
+  font-size:15px;
+  float:right;
+  margin-top:15px;
+  margin-right:100px;
+  margin-left:25px;font-family: 'robotoregular';
+}
+.battery2{
+  color:#fff;
+  font-size:15px;
+  float:left;
+  margin-left:25px
+    margin-top:15px;
+    font-family: 'robotoregular';
+}
+.stories2{
+  background:#DBE2E5;
+  height:100px;
+  width:800px;font-family: 'robotoregular';
+}
+.micon2{
+  color:#222;
+  font-size:15px;
+}
+.sbutton2{
+  margin-top:80px;font-family: 'robotoregular';
+}
+.nowmenu{
+  background:#fff;
+  border-radius:10px;font-family: 'robotoregular';
+  height:300px;
+  width:600px;
+  margin-top:5px;
+}
+.box{
+  border-bottom:1px solid #e0e0e0;font-family: 'robotoregular';
+  height:40px;
+  width:600px;
+}
+.datetext{
+  font-size:15px;
+  color:#222;
+  float:left;
+  margin-top:15px;font-family: 'robotoregular';
+  margin-left:80px;
+}
+.volume_upicon{
+  float:left;
+  margin-top:8px;
+  margin-left:8px;
+  color:#424242;
+}
+.sl{
+  float:left;font-family: 'robotoregular';
+
+}
+.mdlspc{
+  height:11px;
+  width:100px;font-family: 'robotoregular';
+}
+.logbt{
+  width:600px;
+  height:40px;font-family: 'robotoregular';
+}
+   </style>
+
+<div align="center">
+  <div class="spacersr2"></div>
+<a href="#3"><div class="usercircle2"></div></a>
+<div class="nowmenu">
+  <div align="center">
+  <div class="box">
+    <div class="datetext">Sunday, March 25 9:56 PM</div>
+  <div class="battery2">84%<i class="micon2 material-icons"></i></div>
+<div class="connected2">GoogleGuest<i class="micon2 material-icons">signal_wifi_4_bar_lock</i></div>
+</div>
+<div class="box"><i class="volume_upicon material-icons">volume_up</i>
+<div class="mdlspc"></div>
+<input style"margin-top:15px;" class="sl mdl-slider mdl-js-slider" type="range" min="0" max="100" value="80" tabindex="0"/></div>
+  </div>
+  
+  <div class="box"><i class="volume_upicon material-icons">brightness_medium</i>
+<div class="mdlspc"></div>
+<input style"margin-top:15px;" class="sl mdl-slider mdl-js-slider" type="range" min="0" max="100" value="80" tabindex="0"/></div>
+   <div class="box">
+     <a href="#1">
+     <button class="logbt mdl-button mdl-js-button mdl-js-ripple-effect">
+  LOGOUT
+</button>
+</a>
+     </div>
+  
+  
+  <div class="box">
+     <a href="#5">
+     <button class="logbt mdl-button mdl-js-button mdl-js-ripple-effect">
+  Developer options
+</button>
+</a>
+     </div>
+  
+  <div class="box">
+     <a href="#1">
+     <button class="logbt mdl-button mdl-js-button mdl-js-ripple-effect">
+  WIFI
+</button>
+</a>
+     </div>
+  
+  
+  <div class="box">
+     <a href="#1">
+     <button class="logbt mdl-button mdl-js-button mdl-js-ripple-effect">
+  MORE
+</button>
+</a>
+     </div>
+  
+  
+  
+</div>
+
+<a href="#apps"><div class="searchbar2"><img class="gicon2" src="assets/gicon.png" height="25" width="25"><div class="srchtxt2">Ask for anything</div></div></a>
+
+</div>
+
+
+
+ </div>
+
+ </a>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <a name="5">
+ <div class="slide5">
+   <style>
+.slide5{
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("assets/bg4.jpg") no-repeat  ;
+  background-size:100% 100%;
+  height:480px;
+  width:800px;
+  margin-top:50px;font-family: 'robotoregular';
+}
+.devapp{
+  height:440px;
+  width:800;font-family: 'robotoregular';
+  background:#eee;
+  border-radius:10px 10px 0px 0px;
+}
+.header4{
+    height:40px;
+  width:800;font-family: 'robotoregular';
+  background:#FE5722;
+  border-radius:10px 10px 0px 0px;
+}
+.devicon{
+  color:#fff;
+  font-size:20px;
+ margin-top:-30px;
+  margin-left:10px;
+  float:left;
+}
+.title{
+  font-size:12px;
+  color:#424242;
+  float:left;font-family: 'robotoregular';
+  margin-top:-29px;
+  margin-left:340px;
+}
+.usersm{
+  height:20px;
+  width:20px;
+  border-radius:100%;
+  background:url(assets/icon.jpeg);
+  border:1px solid #ffffff;font-family: 'robotoregular';
+background-size:100% 100%;
+  float:right;
+  margin-top:-32px;
+  margin-right:6px;font-family: 'robotoregular';
+}
+.newbt{
+  width:800px;
+  border-bottom:1px solid #999;font-family: 'robotoregular';
+}
+   </style>
+
+<div class="devapp">
+  <div class="header4"></div><i class="devicon material-icons">developer_mode</i><div class="title">DEVELOPER OPTIONS</div><div class="usersm"></div>
+  
+       <a href="#6">
+     <button class="newbt mdl-button mdl-js-button mdl-js-ripple-effect">
+  induce kernel panic
+</button>
+</a>
+   <a href="#1">
+     <button class="newbt mdl-button mdl-js-button mdl-js-ripple-effect">
+  lock
+</button>
+</a>
+ <a href="#2">
+     <button class="newbt mdl-button mdl-js-button mdl-js-ripple-effect">
+  wifi
+</button>
+</a>
+ <a href="#3">
+     <button class="newbt mdl-button mdl-js-button mdl-js-ripple-effect">
+  home
+</button>
+</a>
+ <a href="#1">
+     <button class="newbt mdl-button mdl-js-button mdl-js-ripple-effect">
+  shell mode
+</button>
+</a>
+ <a href="#1">
+     <button class="newbt mdl-button mdl-js-button mdl-js-ripple-effect">
+  kiosk mode
+</button>
+</a>
+  
+</div>
+<style>
+  .homeicon{
+    color:#fff;
+    font-size:20px;
+  }
+  .hmbt{
+    height:40px;
+    width:40px;
+  }
+  .navbar{
+    height:40px;
+    background:#000;
+  }
+</style>
+<div class="navbar"><a href="#3"><button class="hmbt mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect">
+  <i class="homeicon material-icons">fiber_manual_record</i>
+</button></a></div>
+ </div>
+ </a>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <a name="6">
+ <div class="slide6">
+   <style>
+.slide6{
+  background:#ff0080;
+  height:480px;
+  width:800px;font-family: 'robotoregular';
+  margin-top:50px;
+}
+.qr{
+  border-radius:5px;
+  height:200px;
+  width:200px;font-family: 'robotoregular';
+  box-shadow: 0px 0px 10px #000;
+  margin-top:175px;
+}
+.txter{
+  color:#fff;
+  font-size:15px;
+  border-bottom:1px solid #fff;
+  width:400px;font-family: 'robotoregular';
+  margin-left:200px;
+}
+   </style>
+   <div align="left">
+<div class="txter">panic occured at 9:27 PM March 25 2018</div>
+<div class="txter">Tap code to dismiss</div>
+<div class="txter">KernelPanic() set to true</div></div><a href="#5">
+<img src="assets/err.png" class="qr"> </a>
+
+ </div>
+
+ </a>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  <a name="7">
+ <div class="slide7">
+   <style>
+.slide7{
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("assets/bg4.jpg") no-repeat  ;
+  background-size:100% 100%;
+  height:480px;
+  width:800px;
+  margin-top:50px;font-family: 'robotoregular';
+}
+.demapp{
+  height:440px;
+  width:800;
+  background:#eee;
+  border-radius:10px 10px 0px 0px;font-family: 'robotoregular';
+}
+.header47{
+    height:40px;
+  width:800;font-family: 'robotoregular';
+  background:#2196F3;
+  border-radius:10px 10px 0px 0px;
+}
+.demicon{
+  color:#fff;
+  font-size:20px;
+ margin-top:-30px;
+  margin-left:10px;
+  float:left;
+}
+.title7{
+  font-size:12px;
+  color:#424242;font-family: 'robotoregular';
+  float:left;
+  margin-top:-29px;
+  margin-left:350px;
+}
+.usersm7{
+  height:20px;
+  width:20px;font-family: 'robotoregular';
+  border-radius:100%;
+  background:url(assets/icon.jpeg);
+  border:1px solid #ffffff;
+background-size:100% 100%;
+  float:right;
+  margin-top:-32px;
+  margin-right:6px;
+}
+
+   </style>
+
+<div class="demapp">
+  <div class="header47"></div><i class="demicon material-icons">assessment</i><div class="title7">DEMO APPLICATION</div><div class="usersm7"></div>
+  
+    
+  
+</div>
+<style>
+  .homeicon{
+    color:#fff;
+    font-size:20px;
+  }
+  .hmbt{
+    height:40px;
+    width:40px;
+  }
+  .navbar{
+    height:40px;
+    background:#000;
+  }
+</style>
+<div class="navbar"><a href="#3"><button class="hmbt mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect">
+  <i class="homeicon material-icons">fiber_manual_record</i>
+</button></a></div>
+ </div>
+ </a>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <a name="8">
+ <div class="slide8">
+   <style>
+.slide8{
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("assets/bg4.jpg") no-repeat  ;
+  background-size:100% 100%;
+  height:480px;
+  width:800px;font-family: 'robotoregular';
+  margin-top:50px;
+}
+.demapp8{
+  height:440px;
+  width:800;
+  background:#eee;font-family: 'robotoregular';
+  border-radius:10px 10px 0px 0px;
+}
+.header478{
+    height:40px;
+  width:800;
+  background:#FFD600;font-family: 'robotoregular';
+  border-radius:10px 10px 0px 0px;
+}
+.demicon8{
+  color:#fff;
+  font-size:20px;
+ margin-top:-30px;
+  margin-left:10px;
+  float:left;
+}
+.title78{
+  font-size:12px;
+  color:#424242;font-family: 'robotoregular';
+  float:left;
+  margin-top:-29px;
+  margin-left:360px;
+}
+.usersm78{
+  height:20px;
+  width:20px;font-family: 'robotoregular';
+  border-radius:100%;
+  background:url(assets/icon.jpeg);
+  border:1px solid #ffffff;
+background-size:100% 100%;
+  float:right;
+  margin-top:-32px;
+  margin-right:6px;
+}
+.calc{
+  height:400px;
+  width:800;
+}
+   </style>
+
+<div class="demapp8">
+  <div class="header478"></div><i class="demicon8 material-icons">web</i><div class="title78">CALCULATOR</div><div class="usersm78"></div>
+  <iframe class="calc" src="nacl-apps/calculator.html"></iframe>
+    
+  
+</div>
+<style>
+  .homeicon{
+    color:#fff;
+    font-size:20px;
+  }
+  .hmbt{
+    height:40px;
+    width:40px;
+  }
+  .navbar{
+    height:40px;
+    background:#000;
+  }
+</style>
+<div class="navbar"><a href="#3"><button class="hmbt mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect">
+  <i class="homeicon material-icons">fiber_manual_record</i>
+</button></a></div>
+ </div>
+ </a>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <a name="9">
+ <div class="slide9">
+   <style>
+.slide9{
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("assets/bg4.jpg") no-repeat  ;
+  background-size:100% 100%;
+  height:480px;
+  width:800px;
+  margin-top:50px;font-family: 'robotoregular';
+}
+.demapp9{
+  height:440px;
+  width:800;font-family: 'robotoregular';
+  background:#eee;
+  border-radius:10px 10px 0px 0px;
+}
+.header479{
+    height:40px;
+  width:800;
+  background:#2196F3;font-family: 'robotoregular';
+  border-radius:10px 10px 0px 0px;
+}
+.demicon9{
+  color:#fff;
+  font-size:20px;
+ margin-top:-30px;
+  margin-left:10px;
+  float:left;
+}
+.title79{
+  font-size:12px;
+  color:#424242;font-family: 'robotoregular';
+  float:left;
+  margin-top:-29px;
+  margin-left:385px;
+}
+.usersm79{
+  height:20px;
+  width:20px;
+  border-radius:100%;
+  background:url(assets/icon.jpeg);font-family: 'robotoregular';
+  border:1px solid #ffffff;
+background-size:100% 100%;
+  float:right;
+  margin-top:-32px;
+  margin-right:6px;
+}
+
+   </style>
+
+<div class="demapp9">
+  <div class="header479"></div><i class="demicon9 material-icons">folder</i><div class="title79">FILES</div><div class="usersm79"></div>
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+     <style>
+    .filesapp{
+      height:718px;
+      width:1366;
+      background:#eee;
+      margin-bottom:50px;font-family: 'robotoregular';
+    }
+     .filesappclose{
+      height:35px;font-family: 'robotoregular';
+      width:1366;
+      background:#2196F3;
+    }
+    .filesicon{
+      color:white;
+      font-size:20px;
+      margin-top:7px;font-family: 'robotoregular';
+      float:right;
+      margin-right:7px;
+    }
+        .filesicon:hover{
+      color:#eee;
+      font-size:20px;
+      margin-top:px;font-family: 'robotoregular';
+      float:right;
+      margin-right:7px;
+      
+    }
+    .filesdivid{
+      font-size:15px;
+      background:#03A9F4;font-family: 'robotoregular';
+    }
+    .filesframe{
+      height:683px;
+      width:1366px;font-family: 'robotoregular';
+    }
+  </style>
+ 
+<header class="mdl-layout__header">
+    <div class="mdl-layout__header-row filesdivid">
+      Downloads
+      <div class="mdl-layout-spacer"></div>
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
+                  mdl-textfield--floating-label mdl-textfield--align-right">
+        <label class="mdl-button mdl-js-button mdl-button--icon"
+               for="fixed-header-drawer-exp">
+          <i class="material-icons">search</i>
+        </label>
+        <div class="mdl-textfield__expandable-holder">
+          <input class="mdl-textfield__input" type="text" name="sample"
+                 id="fixed-header-drawer-exp">
+        </div>
+      </div>
+    </div>
+  </header>
+
+<div align="left">
+  <main class="mdl-layout__content">
+    <div class="page-content">
+      
+   
+    <div class="dlcard">
+    <style>
+      .dlcard{
+        background:#fff;
+        width:700px;
+        height:315px;
+        margin-left:50px;
+        border-radius:2px;
+        margin-top:15px;font-family: 'robotoregular';
+      }
+      .file{
+        height:49px;
+        border-bottom:1px solid #999;font-family: 'robotoregular';
+      }
+        .file:active{
+        height:49px;
+        border-bottom:1px solid #039BE5;
+        background:#03A9F4;
+        color:#fff;
+      }
+      .fileicon{
+        color:#F44336;
+        font-size:30px;
+        margin-top:10px;
+        margin-left:10px;
+        float:left;
+      }
+       
+       .fileicon2{
+        color:#E91E63;
+        font-size:30px;
+        margin-top:10px;
+        margin-left:10px;
+        float:left;
+      }
+       .fileicon3{
+        color:#4CAF50;
+        font-size:30px;
+        margin-top:10px;
+        margin-left:10px;
+        float:left;
+      }
+       .fileicon4{
+        color:#0D47A1;
+        font-size:30px;
+        margin-top:10px;
+        margin-left:10px;
+        float:left;
+      }
+       .fileicon5{
+        color:#FBC02D;
+        font-size:30px;
+        margin-top:10px;
+        margin-left:10px;
+        float:left;
+      }
+      .fileicon6{
+        color:#FFC107;
+        font-size:30px;
+        margin-top:10px;
+        margin-left:10px;
+        float:left;
+      }
+      .filetext{
+        font-size:15px;
+        margin-top:15px;
+        color:#333;font-family: 'robotoregular';
+        margin-left:200px;
+        float:left;
+      }
+    </style>
+    <div class="file"><i class="material-icons fileicon">insert_photo</i><div class="filetext">bg.jpg</div></div>
+        <div class="file"><i class="material-icons fileicon2">code</i><div class="filetext">icon.svg</div></div>
+            <div class="file"><i class="material-icons fileicon3">tab</i><div class="filetext">data.xls</div></div>
+                <div class="file"><i class="material-icons fileicon4">mode_edit</i><div class="filetext">about.gdoc</div></div>
+                    <div class="file"><i class="material-icons fileicon5">folder</i><div class="filetext">img.ico</div></div>
+                     <div class="file"><i class="material-icons fileicon6">aspect_ratio</i><div class="filetext">fuchsia.pptx</div></div>
+    </div>
+      
+      
+      
+      
+      
+      
+      
+      
+    
+    </div>
+  </main>
+  </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+</div>
+<style>
+  .homeicon{
+    color:#fff;
+    font-size:20px;
+  }
+  .hmbt{
+    height:40px;
+    width:40px;
+  }
+  .navbar{
+    height:40px;
+    background:#000;
+  }
+</style>
+<div class="navbar"><a href="#3"><button class="hmbt mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect">
+  <i class="homeicon material-icons">fiber_manual_record</i>
+</button></a></div>
+ </div>
+ </a>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <a name="10">
+ <div class="slide10">
+   <style>
+.slide10{
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("assets/bg4.jpg") no-repeat  ;
+  background-size:100% 100%;
+  height:480px;
+  width:800px;
+  margin-top:50px;font-family: 'robotoregular';
+}
+.demapp10{
+  height:440px;
+  width:800;
+  background:#fff;
+  border-radius:10px 10px 0px 0px;
+}
+.header4710{
+    height:40px;
+  width:800;font-family: 'robotoregular';
+  background:#E0E0E0;
+  border-radius:10px 10px 0px 0px;
+}
+.demicon10{
+  color:#222;
+  font-size:20px;
+ margin-top:-30px;
+  margin-left:10px;
+  float:left;
+}
+.title10{
+  font-size:12px;
+  color:#222;
+  float:left;
+  margin-top:-29px;font-family: 'robotoregular';
+  margin-left:370px;
+}
+.usersm10{
+  height:20px;
+  width:20px;
+  border-radius:100%;
+  background:url(assets/icon.jpeg);
+  border:1px solid #000;
+background-size:100% 100%;font-family: 'robotoregular';
+  float:right;
+  margin-top:-32px;
+  margin-right:6px;
+}
+.srchhd{
+  background:#F8F9FB;
+  width:800px;
+  height:75px;font-family: 'robotoregular';
+  
+ border-bottom:1px solid #BDBDBD;
+}
+.setsrch{
+  width:600px;
+  height:40px;
+background:#ffffff;font-family: 'robotoregular';
+box-shadow: 0px 0px 5px #999;
+border-radius:20px;
+}
+.spacerset{
+  height:17.5px;font-family: 'robotoregular';
+  width:800px;
+}
+.seticon{
+  color:#2196F3;font-family: 'robotoregular';
+  font-size:20px;
+  padding:10px;
+  float:left;
+}
+.srch0txt{
+  float:left;
+  font-size:15px;
+margin-left:200px;font-family: 'robotoregular';
+  margin-top:10px;
+  color:#333;
+}
+   </style>
+
+<div class="demapp10">
+  <div class="header4710"></div><i class="demicon10 material-icons">settings</i><div class="title10">SETTINGS</div><div class="usersm10"></div>
+  
+  <div class="srchhd"><div class="spacerset"></div><div class="setsrch"><div align="left"><i class="seticon material-icons">search</i><div class="srch0txt">Search settings</div></div></div></div>
+  
+    
+  
+</div>
+<style>
+  .homeicon{
+    color:#fff;
+    font-size:20px;
+  }
+  .hmbt{
+    height:40px;
+    width:40px;
+  }
+  .navbar{
+    height:40px;
+    background:#000;
+  }
+</style>
+<div class="navbar"><a href="#3"><button class="hmbt mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect">
+  <i class="homeicon material-icons">fiber_manual_record</i>
+</button></a></div>
+ </div>
+ </a>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+</div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+{
+  "name": "Armadillo","productName": "Armadillo",
+  "version": "1.0.0",
+  "description": "Run the Fuchsia OS armadillo ui on electron",
+  "main": "main.js",
+    "electron": "^1.8.4",
+ "electron-packager": "^8.1.0",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/nmcain/electronarmadillo",
+  "keywords": [
+    "Electron",
+    "armadillo",
+    "fuchsia",
+    "google",
+    "demo"
+  ],
+  "author": "Noah Cain",
+  "license": "GNU GPL",
+  "devDependencies": {
+    "electron": "^1.8.4"
+  }
+}

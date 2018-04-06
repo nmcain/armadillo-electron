@@ -1,0 +1,609 @@
+
+
+ <link rel="stylesheet" href="../styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="../mdl/4.css">
+<script src="../mdl/material.min.js"></script>
+<script src="../main.js"></script>
+   
+    
+    
+    
+
+        <style>
+      /* reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+.clear:before,
+.clear:after {
+    content: " ";
+    display: table;
+}
+.clear:after { clear: both; }
+.clear { *zoom: 1;}
+.none { display: none;}
+:focus,
+:active { outline: 0 }
+a { text-decoration: none }
+li { list-style: none }
+
+
+
+/* frame */
+body{
+    font-family:arial;
+    font-size:13px;
+    overflow:hidden;
+    
+}
+#browser {
+    width: 100%;
+    min-width: 900px;
+    background: #333;
+    border: 0px solid #666;
+    border-radius: 0px;
+    overflow: hidden;
+height:100%;
+    color:#333;
+}
+
+/* tabs */
+
+.tabs {
+    float: left;
+    margin-left: 20px;
+    height: 40px;
+}
+
+.tabs li,
+.tabs li:before {
+    cursor: default;
+    z-index: 1;
+    position: relative;
+    border: 1px solid #aaa;
+    border-bottom: 0;
+    transform: skewX(25deg);
+    float: left;
+    height: 29px;
+    margin: 10px 0 0 12px;
+    padding: 0 15px;
+    width: 160px;
+    border-radius: 2px 2px 0 0;
+    box-shadow: inset -1px 1px 0 rgba(255,255,255,.5);
+    background: #ddd;
+}
+
+
+.tabs li:nth-child(1) { z-index: 7 }
+.tabs li:nth-child(2) { z-index: 6 }
+.tabs li:nth-child(3) { z-index: 5 }
+.tabs li:nth-child(4) { z-index: 4 }
+.tabs li:nth-child(5) { z-index: 3 }
+.tabs li:nth-child(6) { z-index: 2 }
+.tabs li:nth-child(7) { z-index: 1 }
+
+.tabs li.active,
+.tabs li.active:before {
+    z-index: 9 !important;
+    background: #eee;
+    height: 30px;
+    margin-bottom: -1px;
+    border-color: #888;
+}
+.tabs li:before {
+    content: '';
+    position: absolute;
+    left: -18px;
+    top: -1px;
+    transform: skewX(140deg);
+    border-right: 0;
+    margin: 0;
+    padding: 0;
+    width: 30px;
+    border-radius: 2px 0 0 0;
+  box-shadow: inset 1px 1px 0 rgba(255,255,255,.5);
+}
+.tabs li img {
+    z-index: 9;
+    position: absolute;
+    left: -6px;
+    top: 6px;
+    width: 16px;
+    height: 16px;
+    transform: skewX(-25deg);
+    border-radius: 3px;
+}
+.tabs li a {
+    z-index: 3;
+    position: absolute;
+    right: 10px;
+    top: 7px;
+    font-size: 18px;
+    color: #777;
+    width: 15px;
+    height: 15px;
+    line-height: 16px;
+    text-align: center;
+    transform: skewX(-25deg);
+    border-radius: 100%;
+    background-color:#e05d68;
+}
+.tabs li a:hover {
+    color: #fff;
+     background-color: #F44336;
+}
+.tabs li a:active { background-color: #d83240 }
+.tabs li span {
+    display: block;
+    width: 98%;
+    line-height: 30px;
+    transform: skewX(-25deg);
+    white-space: nowrap;
+    overflow: hidden;
+}
+.tabs li span:after {
+    content: '';
+    width: 25px;
+    height: 28px;
+    position: absolute;
+    right: 0;
+    top: 1px;
+    background: -webkit-linear-gradient(left, hsla(0,0%,87%,0) 0%,hsla(0,0%,87%,1) 77%,hsla(0,0%,87%,1) 100%);
+}
+.tabs li.active span:after { background: -webkit-linear-gradient(left,  hsla(0,0%,93%,0) 0%,hsla(0,0%,93%,1) 77%,hsla(0,0%,93%,1) 100%) }
+
+/* tab add */
+
+.add {
+    text-align: center;
+    font-weight: bold;
+    color: #ccc;
+    line-height: 17px;
+    font-size: 15px;
+    float: left;
+    margin: 16px 8px 0;
+    width: 23px;
+    height: 16px;
+    background: #ddd;
+    border-radius: 1.5px;
+   
+    transform: skewX(25deg);
+}
+.add:hover {
+    box-shadow: inset 0 1px 0 rgba(255,255,255,1);
+    background: #f8f8f8;
+}
+.add:active {
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.2);
+    background: #ccc;
+    color: #555;
+}
+
+/* bar */
+
+.bar {
+  z-index: 3;
+  position: relative;
+    clear: both;
+    padding: 6px;
+    background: #eee;
+    border-top: 1px solid #aaa;
+}
+
+.bar ul {
+  float: left;}
+
+.bar > ul > li {
+  position: relative;
+    float: left;
+    margin: 0 2px;
+}
+.bar > ul > li > a,
+.bar ul li label{
+    display: block;
+    width: 26px;
+    height: 26px;
+    color: #444;
+    text-align: center;
+    line-height: 26px;
+    font-size: 20px;
+    border-radius: 4px;
+    border: 1px solid #eee;
+}
+.bar > ul > li > a:hover,
+.bar ul li label:hover {
+    border: 1px solid #eee;
+    background: #eee;
+    
+}
+.bar > ul > li > a:active ,
+.bar ul li label:active,
+.bar ul.drop li input:checked ~ label {
+    border: 1px solid #eee;
+    background: #ccc;
+    
+}
+
+.bar .favorite {
+  z-index: 5;
+  position: absolute;
+  right:48px;
+  top: 8px;
+    width: 26px;
+    height: 26px;
+    color: #888;
+    text-align: center;
+    line-height: 26px;
+    font-size: 24px;
+}
+
+
+.bar input:checked  ~ .favorite {
+    color: #e8bc02;
+    text-shadow: 0 1px 1px rgba(0,0,0,.2);
+}
+
+.bar input:checked  ~ .icon-star-empty:before { content: "\f005"; }
+
+/* addres bar */
+
+.bar input {
+    display:block;
+    float:left;
+    left: 100px;
+    right: 45px;
+    position: absolute;
+    margin-left: 10px;
+    border: 1px solid #bbb;
+    height: 26px;
+    font-size: 13px;
+    line-height: 26px;
+    border-radius: 3px;
+    padding: 0 10px;
+    
+    width:1215px;
+}
+
+/* menu .drop */
+
+.bar ul.drop {
+  float: right;
+}
+
+.bar ul.drop li input {
+  display: none;
+}
+
+.bar ul.drop li ul {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 30px;
+  width: 230px;
+  padding: 5px 0;
+  background-color: rgba(255,255,255,.94);
+  box-shadow: 0 1px 7px rgba(0,0,0,.4);
+  border-radius: 5px;
+  border-top: 1px solid #ddd;
+}
+
+.bar ul.drop li input:checked ~ ul {
+  display: block;
+}
+
+
+.bar ul.drop li ul li.slice {
+  margin: 6px 0;
+  height: 2px;
+  border-top: 1px solid #ddd;
+}
+
+.bar ul.drop li ul li a {
+  display: block;
+  height: 20px;
+  line-height: 20px;
+  padding-left: 10px;
+  font-size: 13px;
+  color: #222;
+}
+
+.bar ul.drop li ul li a:hover,
+.bar ul.drop li ul li a:hover span{
+  background: -webkit-linear-gradient(top, #5da4ea 0%,#4096ee 100%);
+  color: #fff;
+}
+
+.bar ul.drop li ul li a span {
+  float: right;
+  margin-right: 10px;
+  color: #999;
+}
+
+/* bookmarks */
+
+.bookmark {
+    position: relative;
+    z-index: 2;
+    clear: both;
+    background: #eee;
+    border-bottom: 1px solid #bbb;
+}
+.bookmark ul {
+    overflow: hidden;
+    margin: 0 5px;
+    height: 32px;
+}
+.bookmark ul li {
+    float: left;
+    margin: 0 0 5px;
+}
+.bookmark ul li a {
+    position: relative;
+    display: block;
+    max-width: 130px;
+    padding: 0 8px 0 28px;
+    height: 25px;
+    line-height: 25px;
+    background: #eee;
+    border-radius: 5px;
+    border: 1px solid #eee;
+    color: #444;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: all .2s ease;
+}
+.bookmark ul li a:hover {
+    border: 1px solid #ccc;
+    background: #eee;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.8), 0 1px 1px rgba(0,0,0,.1);
+}
+.bookmark ul li a:active {
+    border: 1px solid #bbb;
+    background: #ddd;
+    box-shadow: inset 0 1px 0 rgba(0,0,0,.1);
+}
+.bookmark ul li a img {
+    width: 16px;
+    position: absolute;
+    left: 7px;
+    top: 4px;
+    border-radius: 3px;
+}
+.bookmark ul li a span { }
+
+/* page - iframe */
+
+.page {
+    clear: both;
+    height: 600px;
+    background: white;
+    border-radius: 0 0 5px 5px;
+    overflow: hidden;
+}
+    </style>
+
+    
+        <script src="//assets.codepen.io/assets/libs/prefixfree.min-a2279db4c4c421e9795be3e1713aff75.js"></script>
+
+    
+
+  <body translate="no" >
+
+    
+<div id="browser" class="clear">
+  
+
+  <ul class="tabs">
+       <!-- <li>
+      <img src="https://www.google.com/images/icons/product/chrome-32.png">
+      <span>Chrome Web Browser</span>
+      <a class="close" href="http://www.google.com/chrome">  <i class="material-icons" style="color:white; font-size:15px;">close</i></a>
+    </li>
+    <li>
+      <img src="http://www.editey.com/editey.ico">
+      <span>crbug</span>
+      <a class="close" href="http://www.editey.com/file/0B7JX_KCDK23VdXBtSEsyN2psbDA"><i class="material-icons" style="color:white; font-size:15px;">close</i></a>
+    </li>
+    <li class="active">
+      <img src="https://www.gnu.org/software/gnuzilla/icecat.png">
+      <span>N-TECH</span>
+      <a class="close" href="http://nmcain.github.io"><i class="material-icons" style="color:white; font-size:15px;">close</i></a>
+    </li>-->
+      <li class="active">
+      <img src="../assets/icon_128.png">
+      <span>Fuchsia OS</span>
+      <a class="close" href="../mdlpages/index.html"><i class="material-icons" style="color:white; font-size:15px;">close</i></a>
+    </li>
+    
+  </ul>
+  
+  <!-- add tab -->
+  <a href="#" class="add"></a>
+  
+  <!-- bar -->
+  <div class="bar clear">
+      <style>
+          .icon-arrow-left{
+              background: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_arrow_back_black_24px.svg) no-repeat scroll center center;
+              
+          }
+                    .icon-arrow-left a:hover  {
+              background: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_arrow_back_black_24px.svg) no-repeat scroll center center;
+              
+          }
+          
+          .icon-arrow-right{
+              background: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_arrow_forward_black_24px.svg) no-repeat scroll center center;
+              
+          }
+          .icon-arrow-right a:hover {
+              background: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_arrow_forward_black_24px.svg) no-repeat scroll center center;
+          }
+                .icon-refresh {
+              background: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_refresh_black_24px.svg) no-repeat scroll center center;
+              
+          }
+          .icon-refresh a:hover {
+              background: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_refresh_black_24px.svg) no-repeat scroll center center;
+          }
+          .icon-reorder{
+             
+               background: url( https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_more_vert_black_24px.svg) no-repeat scroll center center;
+          }
+            .icon-reorder a:hover{
+             
+               background: url( https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_more_vert_black_24px.svg) no-repeat scroll center center;
+          }
+         
+      </style>
+    <ul>
+      <li><a class="icon-arrow-left material-icons" style="color:#333;" href="javascript:history.go(-1)" target="frame">arrow_back</a></li>
+      <li><a class="icon-arrow-right material-icons" style="color:#333;" href="javascript:history.go(-1)" target="frame">arrow_forward</a></li>
+      <li><a class="icon-refresh material-icons" style="color:#333;" href="javascript:history.go(0)" target="frame">refresh</a></li>
+      
+    </ul>
+    <input id="favorite" type="checkbox" class="none">
+    <label for="favorite" class="favorite icon-star-empty"></label>
+    <input class="mdl" placeholder="Search" value="http://www.google.com" type="text">
+    <style>
+      .mdl{
+        width:1200px;
+      }
+    </style>
+    <ul class="drop">
+      <li>
+        <input id="panel" type="checkbox">
+        <label for="panel" class="icon-reorder material-icons">more_vert</label>
+      <ul>
+        <li><a href="#">New Tab <span>⌘T</span></a></li>
+        <li><a href="#">New Window <span>⌘N</span></a></li>
+        <li><a href="#">New Incognito Window <span>⇧⌘N</span></a></li>
+        <li><a href="#">Bookmarks <span>▶</span></a></li>
+        <li class="slice"></li>
+        <li><a href="#">Edit</a></li>
+        <li class="slice"></li>
+        <li><a href="#">Zoom</a></li>
+        <li class="slice"></li>
+        <li><a href="#">Save Page As.. <span>⌘S</span></a></li>
+        <li><a href="#">Find.. <span>⌘F</span></a></li>
+        <li><a href="#">Print.. <span>⌘P</span></a></li>
+        <li><a href="#">Tools <span>▶</span></a></li>
+        <li class="slice"></li>
+        <li><a href="#">History <span>⌘Y</span></a></li>
+        <li><a href="#">Donwloads <span>⇧⌘J</span></a></li>
+        <li class="slice"></li>
+        <li><a href="#">Signed in as nmcain@gmail.com</a></li>
+        <li class="slice"></li>
+        <li><a href="#">Settings <span>⌘,</span></a></li>
+        <li><a href="#">About Google Chrome</a></li>
+        <li><a href="#">View Background Pages (8)</a></li>
+        <li><a href="#">Help</a></li>
+      </ul>
+      </li>
+    </ul>
+  </div>
+  
+  <!-- bookmark
+  <div class="bookmark">
+    <ul>
+      <li>
+        <a href="http://nmcain.github.io" target="frame">
+          <img src="https://www.gnu.org/software/gnuzilla/icecat.png">
+          <span>N-TECH</span></a></li>
+     <li>
+        <a href="http://codepen.io/" target="frame">
+          <img src="http://cdn.flaticon.com/png/64/51767.png">
+          <span>CodePen</span></a></li>
+      <li>
+        <a href="chrome://newtab" target="frame">
+          <img src="https://www.google.com/images/icons/product/chrome-32.png">
+          <span>Google</span></a></li>
+      <li>
+        <a href="http://bing.com" target="frame">
+          <img src="http://www.bing.com/sa/simg/bing_p_rr_teal_min.ico">
+          <span>Bing</span></a></li>
+     <!-- <li>
+        <a href="http://ixl.com/"  target="frame">
+          <img src="https://www.ixl.com/ixl-favicon.png">
+          <span>IXL Math</span></a></li>
+      <li>
+        <a href="http://www.khanacademy.com" target="frame">
+          <img src="https://cdn.kastatic.org/images/khan-logo-vertical-transparent.png">
+          <span>Khan Academy</span></a></li>
+      <li>
+        <a href="http://www.prodigygame.com/play" target="frame">
+          <img src="http://a3.mzstatic.com/us/r30/Purple42/v4/2d/11/9d/2d119dd1-15cd-8724-734f-791dacb7c22c/icon175x175.png">
+          <span>Prodigy</span></a></li>
+                <li>
+        <a href="https://hosted6.renlearn.com/271636/public/rpm/login/Login.aspx?srcID=s" target="frame">
+          <img src="https://hosted6.renlearn.com/271636/favicon.ico">
+          <span>AR</span></a></li>
+    </ul>
+  </div>-->
+  
+  <div class="page">
+    <iframe width="100%" height="100%" src="../mdlpages/index.html" frameborder="0" name="frame"></iframe>
+  </div>
+</div>
+    
+    <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+        <script>
+
+
+// empty link
+$("a[href^='#']").on("click", function(e){
+  e.preventDefault();
+  //return false;
+});
+
+// tab New
+$(".add").on("click", function(e){
+  if($(".tabs li").size() < 4){
+    $(".tabs li.active").removeClass("active");
+    $(".tabs").append('<li class="active"><span>New Tab</span><a class="close" href="http://www.bing.com">×</a></li>');
+    $(".page iframe").attr("src", " ");
+  }
+});
+  
+
+// tab Click.active
+$(".tabs li").on("click", function(e){
+  
+  //önce active olan class'ı silelim
+  $(".tabs li.active").removeClass("active");
+  $(this).addClass("active");
+  
+  //tab'ın sayfasını yükleyelim -ok
+  $(".page iframe").attr("src", $(this).find("a").attr("href"));
+  
+  e.preventDefault();
+});
+  
+
+// tab Close
+$(".tabs li a.close").on("click", function(e){
+  $(this).closest("li").remove();
+  
+  // снлф иднфе зщршщш
+  if($(".tabs li").size() == 0){
+    $(".tabs").append('<li><span>New Tab</span><a class="close" href="http://www.bing.com">×</a></li>');
+  }
+  
+  //bir önceki tab'a geçelim
+  $(".tabs li:last-child").addClass("active");
+  
+  e.preventDefault();
+});
+
+
+// bookmark link
+$(".bookmark ul li a").on("click", function(e){
+  $(".page iframe").attr("src", $(this).attr("href"));
+  e.preventDefault();
+});
+      //# sourceURL=pen.js
+    </script>
