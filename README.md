@@ -1,7 +1,7 @@
-# fuchsia-html
-This is the system UI of Fuchsia OS, recreated in HTML.  You can either download it and open the html file; but for the full experience, install it as a chrome app.
-[![](unit.png)](unit.png "image")
-# How to use
-Click the circle for the apps menu, click the clock for the settings menu, Click the G icon in the search bar to close the apps menu. I will try to add working applications tied to the icons in the apps launcher.
+[![](icon.ico)](icon.ico "image")
+# armadillo-electron
+armadillo-electron allows you to run the armadillo ui on Windows. It was written in HTML and utilizes electron.
+[![](1.png)](1.png "image")
+[![](2.png)](2.png "image")
 # Additional Information
-If you want to send suggestions, feel free to email nmcain@gmail.com.
+If you want to send suggestions or questions, feel free to email nmcain@gmail.com.
